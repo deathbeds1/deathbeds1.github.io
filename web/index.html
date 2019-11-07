@@ -1,79 +1,731 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="ru">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Bitnami: Open Source. Simplified</title>
-  <link href="bitnami.css" media="all" rel="Stylesheet" type="text/css" /> 
-  <link href="/dashboard/stylesheets/all.css" rel="stylesheet" type="text/css" />
+
+	<meta charset="utf-8">
+
+	<title>Московский Политех САПР</title>
+	<meta name="description" content="Главная страница образовательной программы Московского Политеха - Интеграция и программирование в САПР"> 
+    <meta name="Keywords" content="Московский Политех, САПР, программирование, 3d, моделлирование, inventor, autodesk, c++"> 
+    <meta property="og:title" content="Московский Политех САПР">
+    <meta property="og:description" content="Интеграция и программирование в САПР. Описание образовательной программы">
+    <meta property="og:image" content="img/@2x/logo_l.png">
+
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="icon" href="img/favicon.ico">
+	<meta property="og:image" content="img/@2x/logo_l.png">
+
+
+
+	
+	
+	<link rel="stylesheet" href="css/styles.min.css">
+
 </head>
+
 <body>
-  <div class="contain-to-grid">
-    <nav class="top-bar" data-topbar>
-      <ul class="title-area">
-        <li class="name">
-          <h1><a href="/dashboard/index.html">Apache Friends</a></h1>
-        </li>
-        <li class="toggle-topbar menu-icon">
-          <a href="#">
-            <span>Menu</span>
-          </a>
-        </li>
-      </ul>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+			<a href="https://mospolytech.ru/" class="navbar-brand" >
+					<img class="lazy img-responsive"
 
-      <section class="top-bar-section">
-        <!-- Right Nav Section -->
-        <ul class="right">
-          <li class="active"><a href="/applications.html">Applications</a></li>
-          <li class=""><a href="/dashboard/faq.html">FAQs</a></li>
-          <li class=""><a href="/dashboard/howto.html">HOW-TO Guides</a></li>
-          <li class=""><a target="_blank" href="/dashboard/phpinfo.php">PHPInfo</a></li>
-          <li class=""><a href="/phpmyadmin/">phpMyAdmin</a></li>
-        </ul>
-      </section>
-    </nav>
-  </div>
-  <div id="wrapper">
-    <div class="hero">
-       <div class="row">
-         <div class="large-12 columns">
-            <p>Apache Friends and Bitnami are cooperating to make dozens of open source applications available on XAMPP, for free. Bitnami-packaged applications include Wordpress, Drupal, Joomla! and dozens of others and can be deployed with one-click installers. Visit the <a href="https://bitnami.com/xampp?utm_source=bitnami&utm_medium=installer&utm_campaign=XAMPP%2BModule" target="_blank">Bitnami XAMPP page</a> for details on the currently available apps.</p><br/>
-            <p>Check out our <a href="https://www.apachefriends.org/bitnami_for_xampp.html" target="_blank" >Bitnami for XAMPP Start Guide</a> for more information about the applications installed.</p>
-         </div>
-       </div>
-    </div>
-    <div id="lowerContainer" class="row">
-      <div id="content" class="large-12 columns">
-          <!-- @@BITNAMI_MODULE_PLACEHOLDER@@ -->
-      </div>
-    </div>
-  </div>
-  <footer>
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="row">
-          <div class="large-8 columns">
-            <ul class="social">
-              <li class="twitter"><a href="https://twitter.com/apachefriends">Follow us on Twitter</a></li>
-              <li class="facebook"><a href="https://www.facebook.com/we.are.xampp">Like us on Facebook</a></li>
-              <li class="google"><a href="https://plus.google.com/+xampp/posts">Add us to your G+ Circles</a></li>
-            </ul>
+					src="data:image/gif;base64,R0lGODlhBAABAIAAAP///wAAACH5BAEAAAEALAAAAAAEAAEAAAICjFMAOw=="
+					data-src="img/@1x/logo_l.png"
+					data-srcset="img/@1x/logo_l.png 1x, img/@2x/logo_l.png 2x"
 
-            <ul class="inline-list">
-              <li><a href="https://www.apachefriends.org/blog.html">Blog</a></li>
-              <li><a href="https://www.apachefriends.org/privacy_policy.html">Privacy Policy</a></li>
-              <li>
-                <a target="_blank" href="http://www.fastly.com/">                    CDN provided by
-                  <img width="48" data-2x="/dashboard/images/fastly-logo@2x.png" src="/dashboard/images/fastly-logo.png" />
-                </a>
-              </li>
-            </ul>
+					alt="logo">
+			</a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="navbar-toggler-icon"></span>
+  			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a href="#about" class="nav-link">О программе</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="#pluses" class="nav-link">Преимущества</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="#jobs" class="nav-link">Работы студентов</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="#partners" class="nav-link">Наши партнеры</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="#boss" class="nav-link">Руководитель программы</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="#contacts" class="nav-link">Контакты</a>
+					</li>
+
+					<li class="nav-item">
+						<button class="btn btn-outline-primary my-2 my-sm-0" type="submit" onclick="location.href='https://mospolytech.ru/index.php?pk'">Подать документы</button>
+					</li>
+
+					
+
+				</ul>
+			</div>
+		</nav>
+		<div class="fadein">
+			<img class="lazy img-responsive"
+
+					src="data:image/gif;base64,R0lGODlhEAAJAIAAAP///wAAACH5BAEAAAEALAAAAAAQAAkAAAIKjI+py+0Po5yUFQA7"
+					data-src="img/@1x/1.jpg"
+					data-srcset="img/@1x/1.jpg 1x, img/@2x/1.jpg 2x"
+
+					alt="logo">
+			<img class="lazy img-responsive"
+
+					src="data:image/gif;base64,R0lGODlhEAAJAIAAAP///wAAACH5BAEAAAEALAAAAAAQAAkAAAIKjI+py+0Po5yUFQA7"
+					data-src="img/@1x/2.jpg"
+					data-srcset="img/@1x/2.jpg 1x, img/@2x/2.jpg 2x"
+
+					alt="logo">
+			<img class="lazy img-responsive"
+
+					src="data:image/gif;base64,R0lGODlhEAAJAIAAAP///wAAACH5BAEAAAEALAAAAAAQAAkAAAIKjI+py+0Po5yUFQA7"
+					data-src="img/@1x/3.jpg"
+					data-srcset="img/@1x/3.jpg 1x, img/@2x/3.jpg 2x"
+
+					alt="logo">
+			<h1>Интеграция и программ<wbr>ирование в САПР</h1>
+			<a class="btn btn-primary opendoor" href="https://mospolytech.ru/index.php?id=93" role="button">День открытых дверей <br> <span>Подробнее...
+			</span></a>
+		</div>
+
+	</header>
+
+
+	<main role="main" >
+
+		<section class="container" id="about">
+	  <div class="jumbotron">
+	    <h2>О ПРОГРАММЕ</h2>
+	    <hr class="hr-line">
+
+	<div class="row mb-2 ">
+    <div class="col-md-6">
+      <p class="lead">Программа направлена на погружение студента в профессиональную среду уже с начала обучения. В рамках данного направления мы учим не только моделированию в 3D-системе, но и программированию для автоматизации процесса построения и печати 3D-объектов.</p> 
+
+<p class="lead">Бурное развитие информационных технологий в промышленности формирует необходимость подготовки ИТ-специалистов нового типа, которые помимо универсальных навыков проектирования и программирования информационных систем владеют фундаментальными инженерными знаниями и способны проводить системный анализ технологических процессов предприятия для внедрения широкого класса систем автоматизированного проектирования (САПР).</p> 
+
+<p class="lead">Машиностроительная отрасль и ИТ-рынок испытывают серьёзный кадровый дефицит в квалифицированных САПР-консультантах и разработчиках, которые хорошо знают современные системы и могут при необходимости разрабатывать на их основе специализированные мобильные, облачные и веб-ориентированные приложения.
+    </div>
+    <div class="col-md-6">
+        <img class="lazy img-responsive example-img"
+
+					src="data:image/gif;base64,R0lGODlhEAAJAIAAAP///wAAACH5BAEAAAEALAAAAAAQAAkAAAIKjI+py+0Po5yUFQA7"
+					data-src="img/@1x/4_l.jpg"
+					data-srcset="img/@1x/4_l.jpg 1x, img/@2x/4_l.jpg 2x"
+
+					alt="sapr1">
+					<br>
+		<img class="lazy img-responsive example-img"
+
+					src="data:image/gif;base64,R0lGODlhEAAJAIAAAP///wAAACH5BAEAAAEALAAAAAAQAAkAAAIKjI+py+0Po5yUFQA7"
+					data-src="img/@1x/5_l.jpg"
+					data-srcset="img/@1x/5_l.jpg 1x, img/@2x/5_l.jpg 2x"
+
+					alt="sapr2">
+    </div>
+  </div>
+
+
+
+
+
+	  </div>
+
+	</section>
+
+	<div class="forcarusel car1">
+
+
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	    <ol class="carousel-indicators">
+	      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	      <li data-target="#myCarousel" data-slide-to="1"></li>
+	      <li data-target="#myCarousel" data-slide-to="2"></li>
+	    </ol>
+
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="container">
+          <div class="carousel-caption text-left">
+          	<h3>САПР нужен!</h3>
+            <p>Машиностроительная отрасль и ИТ-рынок испытывают серьёзный кадровый дефицит в квалифицированных САПР-консультантах и разработчиках, которые хорошо знают современные системы</p>
+            <hr class="whiteline">
           </div>
-          <div class="large-4 columns">
-            <p class="text-right">Copyright (c) 2015, Apache Friends</p>
+        </div>
+      </div>
+      <div class="carousel-item" >
+        <div class="container">
+          <div class="carousel-caption text-left">
+          	<h3>Совместно с Autodesk!</h3>
+            <p>Образовательная программа разработана Политехом совместно с мировым лидером в области САПР компанией Autodesk и рекомендована для тиражирования в стране и за рубежом.</p>
+            <hr class="whiteline">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <div class="carousel-caption text-left">
+          	<h3>Огромное количество рабочих мест!</h3>
+            <p>В России большое число компаний, которые прямо сейчас нуждаются в САПР специалистах. Так что будьте уверены, что после получения диплома, вы с легкостью найдете работу по специальности!</p>
+            <hr class="whiteline">
           </div>
         </div>
       </div>
     </div>
-  </footer>
+    
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+
+  	</div>
+
+	</div>
+
+
+
+	<section class="container" id="pluses">
+	  <div class="jumbotron">
+	    <h2 class="h2preim">ПРЕИМУЩЕСТВА НАШЕЙ ОБРАЗОВАТЕЛЬНОЙ ПРОГРАММЫ</h2>
+	    <hr class="hr-line">
+	    <div class="pluses">
+
+	       <div class="pls">
+	            <div class="sup left"><h3>Лучшие студенты получают <span>индустриальные сертификаты</span></h3></div>
+	            <img class="lazy img-responsive"
+
+					src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+					data-src="img/@1x/7.png"
+					data-srcset="img/@1x/7.png 1x, img/@2x/7.png 2x"
+
+					alt="sapr plus 1">
+	        </div>
+	        
+	        <div class="pls">
+	            <img class="lazy img-responsive"
+
+					src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+					data-src="img/@1x/8.png"
+					data-srcset="img/@1x/8.png 1x, img/@2x/8.png 2x"
+
+					alt="sapr plus 2">
+	            <div class="sup right"><h3>Гарантированные <span>стажировки и трудоустройство у больших IT компаний</span></h3></div>
+	        </div>
+	        
+	        <div class="pls">
+	            <div class="sup left"><h3>Для обучения студентам предоставляется самое <span>передовое оборудование</span></h3></div>
+	            <img class="lazy img-responsive"
+
+					src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+					data-src="img/@1x/9.png"
+					data-srcset="img/@1x/9.png 1x, img/@2x/9.png 2x"
+
+					alt="sapr plus 3">
+	        </div>
+	        <div class="pls">
+	            <img class="lazy img-responsive"
+
+					src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+					data-src="img/@1x/10.png"
+					data-srcset="img/@1x/10.png 1x, img/@2x/10.png 2x"
+
+					alt="sapr plus 4">
+	            <div class="sup right"><h3>За время учебы <span>студенты разрабатывают более 7 проектов</span>, которые в дальнейшем защищают перед работодателями и экспертами в области САПР</h3></div>
+	        </div>
+    	</div>
+		
+
+		<table>
+        <tr>
+            <tr><th>Семестр</th> <th>Проект</th> <th>Технологии</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Программный конфигуратор 3D изделия</td>
+            <td>Autodesk Inventor, C++</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Обратный инжиниринг, сложные сборки (50+ деталей), размещение в вебе, САПР-плагин</td>
+            <td>Autodesk Inventor, C++, Fusion 360, View and Data API, HTML+CSS+JS</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Веб-приложение в области САПР, автоматизация расчетов (САЕ)</td>
+            <td>Autodesk Fusion 360 API, Python, Inventor Simulation Mechanical</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Настольное или веб-приложение в области электрических САПР</td>
+            <td>Autodesk AutoCAD Electrical, C++, Python</td>
+        </tr>
+    </table>
+
+
+	</div>
+	</section>
+
+
+	<div class="forcarusel car2">
+
+
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	    <ol class="carousel-indicators">
+	      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	      <li data-target="#myCarousel" data-slide-to="1"></li>
+	      <li data-target="#myCarousel" data-slide-to="2"></li>
+	    </ol>
+
+    <div class="carousel-inner"  >
+
+      <div class="carousel-item active">
+        <div class="container">
+          <div class="carousel-caption text-left">
+          	<h3>САПР нужен!</h3>
+            <p>Машиностроительная отрасль и ИТ-рынок испытывают серьёзный кадровый дефицит в квалифицированных САПР-консультантах и разработчиках, которые хорошо знают современные системы</p>
+            <hr class="whiteline">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" >
+        <div class="container">
+          <div class="carousel-caption text-left">
+          	<h3>Совместно с Autodesk!</h3>
+            <p>Образовательная программа разработана Политехом совместно с мировым лидером в области САПР компанией Autodesk и рекомендована для тиражирования в стране и за рубежом.</p>
+            <hr class="whiteline">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <div class="carousel-caption text-left">
+          	<h3>Огромное количество рабочих мест!</h3>
+            <p>В России большое число компаний, которые прямо сейчас нуждаются в САПР специалистах. Так что будьте уверены, что после получения диплома, вы с легкостью найдете работу по специальности!</p>
+            <hr class="whiteline">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+
+  	</div>
+
+	</div>
+
+
+	<section class="container" id="jobs">
+	  <div class="jumbotron">
+	    <h2>РАБОТЫ СТУДЕНТОВ</h2>
+	    <hr class="hr-line">
+
+
+		<div id="carousel">
+
+	        <ul class="flip-items">
+
+	            <li data-flip-title="Razzmatazz" data-flip-category="Purples">
+
+	                <div class="icon-cards__item">
+          
+			           <iframe class="window" src="https://sketchfab.com/models/0cd9ea31d76c4736800754f5f8e57b48/embed?autospin=0&amp;autostart=0" frameborder="0" allow="autoplay; fullscreen" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+			           <p>Иван Родионов 1 курс 2018</p>
+           
+    				</div>
+
+
+
+	             </li>
+
+	            <li data-flip-title="Deep Lilac" data-flip-category="Purples">
+
+
+	                <div class="icon-cards__item">
+          
+			           <iframe class="window" src="https://sketchfab.com/models/0cd9ea31d76c4736800754f5f8e57b48/embed?autospin=0&amp;autostart=0" frameborder="0" allow="autoplay; fullscreen" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+			           <p>Дмитрий Попов 2 курс 2017</p>
+           
+    				</div>
+
+
+	            </li>
+
+	            <li data-flip-title="Daisy Bush" data-flip-category="Purples">
+
+
+	                <div class="icon-cards__item">
+          
+			           <iframe class="window" src="https://sketchfab.com/models/0cd9ea31d76c4736800754f5f8e57b48/embed?autospin=0&amp;autostart=0" frameborder="0" allow="autoplay; fullscreen" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+			           <p>Сергей Макаров 1 курс 2017</p>
+           
+    				</div>
+
+
+	            </li>
+
+	        </ul>
+    	</div>
+
+
+
+
+		</div>
+
+	</section>
+
+
+
+
+
+
+		<div class="forcarusel car3">
+
+
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	    <ol class="carousel-indicators">
+	      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	      <li data-target="#myCarousel" data-slide-to="1"></li>
+	      <li data-target="#myCarousel" data-slide-to="2"></li>
+	    </ol>
+
+    <div class="carousel-inner"  >
+
+      <div class="carousel-item active">
+        <div class="container">
+          <div class="carousel-caption text-left">
+          	<h3>САПР нужен!</h3>
+            <p>Машиностроительная отрасль и ИТ-рынок испытывают серьёзный кадровый дефицит в квалифицированных САПР-консультантах и разработчиках, которые хорошо знают современные системы</p>
+            <hr class="whiteline">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" >
+        <div class="container">
+          <div class="carousel-caption text-left">
+          	<h3>Совместно с Autodesk!</h3>
+            <p>Образовательная программа разработана Политехом совместно с мировым лидером в области САПР компанией Autodesk и рекомендована для тиражирования в стране и за рубежом.</p>
+            <hr class="whiteline">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <div class="carousel-caption text-left">
+          	<h3>Огромное количество рабочих мест!</h3>
+            <p>В России большое число компаний, которые прямо сейчас нуждаются в САПР специалистах. Так что будьте уверены, что после получения диплома, вы с легкостью найдете работу по специальности!</p>
+            <hr class="whiteline">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+
+  	</div>
+
+	</div>
+
+
+	<section class="container" id="partners">
+	  <div class="jumbotron">
+	    <h2>НАШИ ПАРТНЕРЫ</h2>
+	    <hr class="hr-line">
+
+
+		<div class="pict">
+        <div class="tt">
+            <img class="lazy img-responsive example-img"
+
+					src="data:image/gif;base64,R0lGODlhEAAJAIAAAP///wAAACH5BAEAAAEALAAAAAAQAAkAAAIKjI+py+0Po5yUFQA7"
+					data-src="img/@1x/13_l.png"
+					data-srcset="img/@1x/13_l.png 1x, img/@2x/13_l.png 2x"
+
+					alt="sapr2">
+                
+        </div>
+        <div class="tt">
+            <img class="lazy img-responsive example-img"
+
+					src="data:image/gif;base64,R0lGODlhEAAJAIAAAP///wAAACH5BAEAAAEALAAAAAAQAAkAAAIKjI+py+0Po5yUFQA7"
+					data-src="img/@1x/14_l.png"
+					data-srcset="img/@1x/14_l.png 1x, img/@2x/14_l.png 2x"
+
+					alt="sapr2">
+            
+        </div>
+        <div class="tt">
+            <img class="lazy img-responsive example-img"
+
+					src="data:image/gif;base64,R0lGODlhEAAJAIAAAP///wAAACH5BAEAAAEALAAAAAAQAAkAAAIKjI+py+0Po5yUFQA7"
+					data-src="img/@1x/15_l.png"
+					data-srcset="img/@1x/15_l.png 1x, img/@2x/15_l.png 2x"
+
+					alt="sapr2">
+            
+        </div>
+        <div class="tt">
+            <img class="lazy img-responsive example-img"
+
+					src="data:image/gif;base64,R0lGODlhEAAJAIAAAP///wAAACH5BAEAAAEALAAAAAAQAAkAAAIKjI+py+0Po5yUFQA7"
+					data-src="img/@1x/16_l.png"
+					data-srcset="img/@1x/16_l.png 1x, img/@2x/16_l.png 2x"
+
+					alt="sapr2">
+            
+        </div>
+        <div class="tt">
+            <img class="lazy img-responsive example-img"
+
+					src="data:image/gif;base64,R0lGODlhEAAJAIAAAP///wAAACH5BAEAAAEALAAAAAAQAAkAAAIKjI+py+0Po5yUFQA7"
+					data-src="img/@1x/17_l.png"
+					data-srcset="img/@1x/17_l.png 1x, img/@2x/17_l.png 2x"
+
+					alt="sapr2">
+            
+        </div>
+        <div class="tt">
+            <img class="lazy img-responsive example-img"
+
+					src="data:image/gif;base64,R0lGODlhEAAJAIAAAP///wAAACH5BAEAAAEALAAAAAAQAAkAAAIKjI+py+0Po5yUFQA7"
+					data-src="img/@1x/18_l.png"
+					data-srcset="img/@1x/18_l.png 1x, img/@2x/18_l.png 2x"
+
+					alt="sapr2">
+           
+        </div>
+    </div>
+  
+  </div>
+
+
+	</div>
+	</section>
+
+
+
+
+
+	<div class="forcarusel car4">
+
+
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	    <ol class="carousel-indicators">
+	      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	      <li data-target="#myCarousel" data-slide-to="1"></li>
+	      <li data-target="#myCarousel" data-slide-to="2"></li>
+	    </ol>
+
+    <div class="carousel-inner"  >
+
+      <div class="carousel-item active">
+        <div class="container">
+          <div class="carousel-caption text-left">
+          	<h3>САПР нужен!</h3>
+            <p>Машиностроительная отрасль и ИТ-рынок испытывают серьёзный кадровый дефицит в квалифицированных САПР-консультантах и разработчиках, которые хорошо знают современные системы</p>
+            <hr class="whiteline">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" >
+        <div class="container">
+          <div class="carousel-caption text-left">
+          	<h3>Совместно с Autodesk!</h3>
+            <p>Образовательная программа разработана Политехом совместно с мировым лидером в области САПР компанией Autodesk и рекомендована для тиражирования в стране и за рубежом.</p>
+            <hr class="whiteline">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <div class="carousel-caption text-left">
+          	<h3>Огромное количество рабочих мест!</h3>
+            <p>В России большое число компаний, которые прямо сейчас нуждаются в САПР специалистах. Так что будьте уверены, что после получения диплома, вы с легкостью найдете работу по специальности!</p>
+            <hr class="whiteline">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+
+  	</div>
+
+	</div>
+
+
+
+
+
+	<section class="container" id="boss">
+		  <div class="jumbotron">
+		    <h2 class="rukovod">РУКОВОДИТЕЛЬ ОБРАЗОВАТЕЛЬНОЙ ПРОГРАММЫ</h2>
+		    <hr class="hr-line">
+		
+		<div class="contain">
+               <img class="lazy img-responsive example-img"
+
+					src="data:image/gif;base64,R0lGODlhAwAEAIAAAP///wAAACH5BAEAAAEALAAAAAADAAQAAAIDjI9WADs="
+					data-src="img/@1x/22_l.jpg"
+					data-srcset="img/@1x/22_l.jpg 1x, img/@2x/22_l.jpg 2x"
+
+					alt="Ковалёва А А фото">
+               <div class="aboutboss">
+                   <h3>Ковалёва Анастасия Александровна</h3>
+                   <p><strong>О себе:</strong> Имеет высшее техническое образование по специальности «Системы автоматизированного проектирования», магистр по направлению «Технологии машиностроения», ст. преподаватель НОЦ ИКТ, кафедры инженерной графики и компьютерного моделирования.</p>
+               </div>
+                <div class="aboutprog">
+                   <h3>О программе «Интеграция и программирование в САПР»:</h3>
+                   <p>«Интеграция и программирование в САПР» - это аббревиатура многим не знакома и вызывает непонимание. Абитуриенты и их родители часто не представляют, что это за профессия и насколько востребованы специалисты данного направления.</p>
+                   <br>
+                   <p>Дома, школы, стадионы, метро, поезда, самолеты – все это разработано и спроектировано опытным конструктором, вашим будущим высокооплачиваемым коллегой.</p>
+                   <br>
+                   <p>Программа направлена на погружение студента в профессиональную среду уже с начала обучения, а к моменту окончания вуза у каждого нашего выпускника есть портфолио его проектов, которые являются подтверждением опыта работы, высокой квалификации и рекомендациями будущему работодателю. Сложность заданий с каждым годом растет в соответствии с требованиями индустрии. Студенты 1-2 курсов сегодня выполняют проекты, которые несколько лет назад считались уровнем дипломной работы выпускника вуза.</p>
+                   <br>
+                   <p>Соревнования по 3D-моделированию, хакатоны по программированию, чемпионаты молодых профессионалов – отличная возможность для учащегося проверить результаты прикладной работы.</p>
+                   <br>
+                   <p>Я сама заканчивала это направление и в полной мере знаю все тонкости производственного и учебного процессов. Работа с проектами, заказчиками и дедлайнами позволила составить четкий план подготовки специалистов, которые будут востребованы на современном рынке труда.</p>
+                </div>
+           </div> 
+       </div>
+
+		</div>
+	</section>
+
+	
+
+	<section class="container" id="contacts">
+		  <div class="jumbotron">
+		    <h2 class="rukovod">КОНТАКТЫ</h2>
+		    <hr class="hr-line">
+
+
+
+			<section class="contacts" id="contacts">
+            <div class="contain2">
+                <div>
+                    <h4>Московский политехнический университет</h4>
+
+                    <p>Главный корпус</p>
+
+                    <p>107023, г. Москва, ул. Б. Семеновская, 38 <br>
+                        +7 (495) 223-05-23, <br>
+                        +7 (499) 785-62-24 (факс)</p>
+
+                    <a href="mailto:mospolytech@mospolytech.ru">mospolytech@mospolytech.ru</a>
+                </div>
+                <div>
+                    <h4>Приемная комиссия</h4>
+
+                    <p>+7 (495) 223-05-22, +7 (495) 223-05-23<br> (добавочные 1430, 1431, 1250, 1296) <br>
+                    +7 (499) 785-61-87 (факс)</p>
+
+                    <a href="mailto:priem@mospolytech.ru">priem@mospolytech.ru </a>
+
+                    <p>Приемная комиссия для иностранных граждан</p>
+
+                    <p>+7 (495) 223-05-23 (добавочный 1152, 1150) </p>
+
+                    <a href="mailto:urisa@mospolytech.ru">urisa@mospolytech.ru</a>
+                </div>
+                <div>
+                    <h4>Центр по работе со студентами</h4>
+
+                    <p>Центр по связям с общественностью
+                    (для СМИ)</p>
+
+                    <p>+7 (495) 223-05-23 (добавочный 1227) </p>
+
+                    <a href="mailto:press@mospolytech.ru">press@mospolytech.ru</a>
+                </div>
+            </div>
+            <a href="https://mospolytech.ru/index.php?pk"><h2 class="getdoc">ПОДАЕМ ДОКУМЕНТЫ</h2></a>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7203b2fc777a05ad8bb26bb718e771e1bfee3c5eb94b90cb5483be88a2b37d72&amp;source=constructor"  frameborder="0"></iframe>
+        </section>
+
+		</div>
+	</section>
+</main>
+
+
+<footer>
+	<div class="last">
+		<img class="lazy img-responsive"
+
+					src="data:image/gif;base64,R0lGODlhBAABAIAAAP///wAAACH5BAEAAAEALAAAAAAEAAEAAAICjFMAOw=="
+					data-src="img/@1x/logo_l.png"
+					data-srcset="img/@1x/logo_l.png 1x, img/@2x/logo_l.png 2x"
+
+					alt="лого">
+		<p>© Московский политехнический университет 2019</p>
+	</div>
+</footer>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+	<script src="js/scripts.min.js"></script>
+	<script>
+		
+	</script>
+
 </body>
 </html>
